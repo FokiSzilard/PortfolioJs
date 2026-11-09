@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Foki Szilárd - Portfólió</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="kozepso-doboz">
+            <h1>Kovács Bence</h1>
+            <p class="jelmondat">Szoftver fejlesztő és tesztelő</p>
+        </div>
+    </header>
+
+     <div class="kozepso-doboz">
+        <nav>
+            <ul>
+                <li><a href="#bemutatkozas">Bemutatkozás</a></li>
+                <li><a href="#keszsegek">Készségek</a></li>
+                <li><a href="#projektek">Projektek</a></li>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="szekcio-doboz" id="bemutatkozas">
+            <div class="bemutatkozas-tartalom">
+                <div class="kep-doboz">
+                    <img src="img/Young_man_yearbook_portrait_202609091315.jpeg" alt="Kovács Bence látható a tabló képén" class="sajat-kep">
+                </div>
+                <div class="bemutatkozas-szoveg">
+                    <h2>Bemutatkozás</h2>
+                    <p>Kovács Bence vagyok, végzős szoftverfejlesztő és -tesztelő technikus hallgató. A technológia világa már korán magával ragadott: nemcsak a működőképes, tiszta kód megírása motivál, hanem az is, hogy a rendszerek stabilak, logikusak és a felhasználók számára valóban hasznosak legyenek. Célom, hogy az elméleti tudásomat valós, komplex projektekben kamatoztassam junior fejlesztőként.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="keszsegek" class="szekcio-doboz">
+        <h2>Készségek</h2>
+        <div class="keszseg-racs">
+            <div class="keszseg-doboz">HTML</div>
+            <div class="keszseg-doboz">CSS</div>
+            <div class="keszseg-doboz">JavaScript</div>
+            <div class="keszseg-doboz">Python</div>
+            <div class="keszseg-doboz">SQL</div>
+            <div class="keszseg-doboz">Git</div>
+            <div class="keszseg-doboz">C#</div>
+            <div class="keszseg-doboz">Scratch</div>
+        </div>
+    </section>
+
+
+    <section id="projektek" class="szekcio-doboz">
+        <h2>Projektek</h2>
+        <div class="projektek-sor">
+            <div class="projekt-doboz">
+                <img src="img/Man_programming_at_computer_202609091318.jpeg" alt="" class="projekt-kep">
+                <h3>Raktárkezelő Webalkalmazás</h3>
+                <p>Reszponzív készletnyilvántartó felület Python és JavaScript alapokon. Támogatja a valós idejű készletkövetést, az automatizált riasztásokat és a termékmozgások riportálását SQL adatbázis segítségével.</p>
+                </div>
+            <div class="projekt-doboz">
+                <img src="img/Man_programming_on_computer_202609091318.jpeg" alt="" class="projekt-kep">
+                <h3>Automatizált Tesztkeretrendszer</h3>
+                <p>Reszponzív készletnyilvántartó felület Python és JavaScript alapokon. Támogatja a valós idejű készletkövetést, az automatizált riasztásokat és a termékmozgások riportálását SQL adatbázis segítségével.</p>
+            </div>
+            <div class="projekt-doboz">
+                <img src="img/Young_man_programming_at_computer_202609091318.jpeg" alt="" class="projekt-kep">
+                <h3>Interaktív Portfólió Motor</h3>
+                <p>Modern HTML5, CSS3 és natív JavaScript technológiákkal felépített webes sablon, amely a gyors betöltést, a letisztult UI/UX-et és az optimalizált kódstruktúrát helyezi előtérbe.</p>
+            </div>
+        </div>
+    </section>
+    <section id="kapcsolat" class="szekcio-doboz">
+        <h2>Kapcsolat</h2>
+        <ul class="kapcsolati-adatok">
+            <li>-Email cím: KovacsBence@turr.hu</li>
+            <li>-telefonszám: +36703351667</li>
+            <li>-lakhely: Kiskunmajsa</li>
+        </ul>
+    </section>
+    
+    <section class="szekcio-doboz">
+        <div class="container regisztraciodiv">
+        <label>Email</label>
+        <input type="text" id="email" placeholder="Email-cim">
+
+        <label>Személyi Igazolvány (6szám és 2 nagybetű egybeirva)</label>
+        <input type="password" id="jelszo" placeholder="jelszo">
+
+        <label>Név</label>
+        <input type="password" id="jelszoUjra" placeholder="jelszo">
+
+        <button onclick="ellenorzes()">Regisztráció</button>
+        <p id="hibafurtok"></p>
+    </div>
+    </section>
+
+    <footer>
+        <div class="kozepso-doboz">
+            <p>© 2026 Kovács Bence</p>
+            <p>Szoftver fejlesztő és tesztelő</p>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
+
